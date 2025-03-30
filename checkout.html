@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html">Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="checkout">
+        <h1>Informações de Pagamento</h1>
+        <form action="finalizar_compra.html" method="POST">
+            <label for="name">Nome Completo</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Endereço</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="payment">Método de Pagamento</label>
+            <select id="payment" name="payment">
+                <option value="credit-card">Cartão de Crédito</option>
+                <option value="paypal">PayPal</option>
+                <option value="bank-transfer">Transferência Bancária</option>
+            </select>
+
+            <button type="submit" class="btn">Finalizar Compra</button>
+        </form>
+    </section>
+</body>
+</html>
